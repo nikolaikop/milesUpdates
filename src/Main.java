@@ -5,8 +5,7 @@ public class Main {
         BonusMilesService service = new BonusMilesService();
         System.out.println("Введите стоимость билета");
         Scanner console = new Scanner(System.in);
-        service.cost = console.nextInt();
-        System.out.println("Количество начисленных миль составит: " + service.calculate());
+        System.out.println("Количество начисленных миль составит: " + service.calculate(console.nextInt()));
 
     }
 }
